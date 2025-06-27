@@ -1,0 +1,161 @@
+.DoctorsHomePage {
+    width: 100%;
+    background-color: var(--bg-secondary);
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: max-content;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Profile Banner */
+  .banner {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .bannerImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .editButton {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: transparent;
+    cursor: pointer;
+    color: var(--color-white);
+    font-size: large;
+    border: none;
+  }
+  
+  /* Profile Info Section */
+  .profilePhoto {
+    position: absolute;
+    margin-top: -80px;
+    width: 180px;
+    left: 350px;
+    z-index: 10;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profileInfo {
+    margin-top: 100px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .profileInfo h1 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .profileInfo p {
+    font-size: 1rem;
+    color: #444;
+    margin: 4px 0;
+  }
+  
+  /* Card Container */
+  .cardContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    min-width: 180px;
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .icon {
+    color: var(--primary-color);
+  }
+  
+  /* Footer */
+  .footer {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .banner {
+      height: 200px;
+    }
+  
+    .profilePhoto {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .profileInfo h1 {
+      font-size: 1.5rem;
+    }
+  
+    .profileInfo p {
+      font-size: 0.9rem;
+    }
+  
+    .cardContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .banner {
+      height: 180px;
+    }
+  
+    .profilePhoto {
+      width: 90px;
+      height: 90px;
+    }
+  
+    .profileInfo h1 {
+      font-size: 1.3rem;
+    }
+  
+    .profileInfo p {
+      font-size: 0.85rem;
+    }
+  
+    .card {
+      min-width: 100%;
+    }
+  }
+  

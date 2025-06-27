@@ -1,0 +1,36 @@
+.Departments{
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+   display: flex;
+   flex-direction: column;
+   background: var(--bg-secondary);
+   align-items: center;
+}
+
+.seaction_Heading {
+    border-bottom: 1px solid red;
+    font-weight: 500;
+    text-align: center;
+    font-size: 2rem;
+    animation: bottom_animation 2s ease-in-out infinite;
+    width: max-content;
+}
+
+@keyframes bottom_animation {
+    from {
+      border-bottom: 0px solid transparent;
+    }
+    to {
+      border-bottom: 2px solid red;
+    }
+  }
+
+
+  .DepartmentsCars{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 30px;
+    justify-content: space-around;
+  }

@@ -1,0 +1,465 @@
+.contact {
+  padding-block: var(--section-padding);
+}
+
+
+  
+  .contactContent {
+    margin-bottom: 50px;
+    padding: 1em;
+  }
+  .contactSocialList1{
+    display: flex;
+    gap: 2em;
+    /* justify-content: center; */
+
+  }
+  .contactSocialList1 span{
+          border-radius: 50%;
+          background-color: var(--color-white);
+          height: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 1px 1px 5px black;
+          width: 35px;
+          font-size: large;
+          cursor: pointer;
+  }
+
+
+  
+  .contactListItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    
+    margin-bottom: 20px;
+  }
+  
+  .contactItemIcon {
+    font-size: 25px;
+    color: var(--color-primary);
+  }
+  
+  .contactItemIcon ion-icon {
+    --ionicon-stroke-width: 40px;
+  }
+  
+  .contactItemTitle {
+    margin-bottom: 10px;
+    color: var(--color-secondary);
+  }
+  
+  .contactInfo {
+    color: var(--color-secondary);
+    font-style: normal;
+    line-height: 1.6;
+    transition: var(--transition-1);
+  }
+  
+  .contactInfo:not(address):is(:hover, :focus) {
+    color: var(--color-primary);
+  }
+  
+  .contactSocialList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding-inline: 40px;
+  }
+  
+  .contactSocialLink {
+    position: relative;
+    background: var(--color-primary);
+    color: var(--bg-primary);
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transition: var(--transition-1);
+  }
+  
+  .contactSocialLink:is(:hover, :focus) {
+    background: var(--raw-seinna);
+    color: var(--white);
+  }
+  
+  .contactSocialLink:is(:hover, :focus) .tooltip {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .contactForm {
+    background: var(--bg-secondary);
+    padding: 20px;
+    border-radius: var(--radius-12);
+    box-shadow: var(--shadow-1);
+  }
+  
+  .formWrapper {
+    margin-bottom: 25px;
+  }
+  
+  .formLabel {
+    color: var(--color-muted);
+    font-size: var(--fs-7);
+    font-family: var(--ff-poppins);
+    margin-bottom: 8px;
+    margin-left: 5px;
+  }
+  
+  .inputWrapper {
+    position: relative;
+  }
+  
+  .inputField {
+    background: var(--bg-primary);
+    color: var(--color-muted);
+    padding: 10px;
+    padding-left: 10px;
+    border-radius: var(--radius-12);
+    transition: var(--transition-1);
+  }
+  
+  .inputWrapper ion-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: var(--color-secondary);
+    font-size: 20px;
+    transition: var(--transition-1);
+  }
+  
+  textarea.inputField {
+    min-height: 60px;
+    height: 120px;
+    max-height: 200px;
+    resize: vertical;
+  }
+  
+  .inputField:focus {
+    outline: 1px solid;
+  }
+  
+  .inputField:focus + ion-icon {
+    color: var(--raw-seinna);
+  }
+  
+  .contact .btnPrimary {
+    max-width: unset;
+    
+    width: 100%;
+    background: var(--color-primary);
+    color: var(--bg-primary);
+  }
+ 
+ 
+ 
+
+  @media (min-width: 768px) {
+    .contactForm {
+      max-width: 450px;
+      margin-inline: auto;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .contact {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+  
+    .contactContent {
+      margin-bottom: 0;
+    }
+  
+    .contactForm {
+      width: 100%;
+    }
+  
+    .contactList {
+      margin-left: -4px;
+    }
+  }
+
+
+
+
+
+  /*-----------------------------------*\
+ * #CUSTOM PROPERTY
+\*-----------------------------------*/
+:root {
+
+    /**
+     * colors
+     */
+  
+    --raw-seinna: hsl(24, 74%, 58%);
+    --sizzling-sunrise: hsl(51, 95%, 54%);
+    --scarlet: hsl(13, 96%, 47%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+  
+    /**
+     * typography
+     */
+  
+    --ff-saira-stencil-one: "Saira Stencil One", sans-serif; 
+    --ff-poppins: 'Poppins', sans-serif;
+    --ff-roboto: 'Roboto', sans-serif;
+  
+    --fs-1: 2rem;
+    --fs-2: calc(1.813rem + 1vw);
+    --fs-3: calc(1.313rem + 1vw);
+    --fs-4: 1.4rem;
+    --fs-5: 1rem;
+    --fs-6: 0.813rem;
+    --fs-7: 0.75rem;
+  
+    --fw-400: 400;
+    --fw-700: 700;
+  
+    /**
+     * transition
+     */
+  
+    --transition-1: 0.25s ease-in-out;
+  
+    /**
+     * spacing
+     */
+  
+    --section-padding: 80px;
+  
+    /**
+     * radius
+     */
+  
+    --radius-4: 4px;
+    --radius-12: 12px;
+  
+  }
+  
+  
+  
+  
+  
+  /*-----------------------------------*\
+   * #THEME COLORS
+  \*-----------------------------------*/
+  
+  body.dark_theme {
+  
+    --bg-primary: hsl(0, 0%, 12%);
+    --bg-secondary: hsl(0, 0%, 19%);
+    --color-primary: hsl(0, 0%, 100%);
+    --color-secondary: hsl(0, 0%, 62%);
+    --card-shadow: hsla(0, 0%, 0%, 0.4);
+    --input-bg: hsl(0, 0%, 16%);
+  
+    --shadow-1: 10px 10px 40px var(--card-shadow);
+  
+  }
+  
+  body.light_theme {
+  
+    --bg-primary: hsl(0, 0%, 90%);
+    --bg-secondary: hsl(0, 0%, 100%);
+    --color-primary: hsl(0, 0%, 12%);
+    --color-secondary: hsl(0, 0%, 37%);
+    --card-shadow: hsla(0, 0%, 0%, 0.1);
+    --input-bg: hsl(0, 0%, 93%);
+  
+    --shadow-1: 10px 10px 40px var(--card-shadow);
+  
+  }
+  
+  
+  
+  
+  
+  /*-----------------------------------*\
+   * #RESET
+  \*-----------------------------------*/
+  
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  li { list-style: none; }
+  
+  a { text-decoration: none; }
+    
+  img,
+  time,
+  span,
+  input,
+  label,
+  select,
+  button,
+  textarea,
+  ion-icon { display: block; }
+  
+  input,
+  button,
+  select,
+  textarea {
+    background: none;
+    border: none;
+    font: inherit;
+  }
+  
+  button,
+  select { cursor: pointer; }
+  
+  input,
+  textarea { width: 100%; }
+  
+  ion-icon { pointer-events: none; }
+  
+  :is(a, button, select) {
+    outline-color: var(--scarlet);
+    outline-offset: 3px;
+  }
+  
+  ::selection {
+    background: var(--color-primary);
+    color: var(--bg-primary);
+  }
+  
+  html {
+    font-family: var(--ff-roboto);
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: var(--bg-primary);
+    transition: var(--transition-1);
+  }
+  
+  body.active { overflow: hidden; }
+  
+  
+  
+  
+  
+  /*-----------------------------------*\
+   * #REUSED STYLE
+  \*-----------------------------------*/
+  
+  .container { padding-inline: 10px; }
+  
+  .h1 {
+    font-size: var(--fs-1);
+    line-height: 1.2;
+    font-weight: 400;
+  }
+  
+  .h2,
+  .h3,
+  .h4 {
+    color: var(--color-primary);
+    font-family: var(--ff-poppins);
+    line-height: 1.2;
+  }
+  
+  .h2 { font-size: var(--fs-2); }
+  
+  .h3 { font-size: var(--fs-3); }
+  
+  .h4 { font-size: var(--fs-5); }
+  
+  .w-100 { width: 100%; }
+  
+  .btn {
+    max-width: max-content;
+    color: var(--color-primary);
+    font-weight: var(--fw-700);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 10px 25px;
+    border: 1px solid transparent;
+    border-radius: var(--radius-4);
+    transition: var(--transition-1);
+  }
+  
+  .btnPrimary { border-color: var(--color-primary); }
+  
+  .btnPrimary:is(:hover, :focus) {
+    background: var(--color-primary);
+    color: var(--bg-primary);
+  }
+  
+  .btnSecondary {
+    background: var(--raw-seinna);
+    border-color: var(--raw-seinna);
+    color: var(--black);
+  }
+  
+  .btnSecondary:is(:hover, :focus) { --raw-seinna: hsl(24, 74%, 64%); }
+  
+  .sectionSubtitle {
+    position: relative;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .sectionSubtitle::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: var(--color-primary);
+  }
+  
+  .sectionTitle {
+    text-shadow: 2px 2px  10px var(--bg-secondary);
+    /* max-width: 350px; */
+    margin-bottom: 30px;
+    font-weight: 500px;
+  }
+  
+  .sectionText{
+    color: var(--color-secondary);
+    line-height: 1.8;
+    margin-bottom: 30px;
+    
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: -40px;
+    background: var(--raw-seinna);
+    min-width: max-content;
+    color: var(--white);
+    font-size: 15px;
+    font-weight: var(--fw-700);
+    padding: 5px 10px;
+    border-radius: var(--radius-4);
+    box-shadow: var(--shadow-1);
+    transform: translateY(-10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition-1);
+    z-index: 1;
+  }
+  
+
+  
+
+
+
+ 
+  
+

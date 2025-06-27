@@ -1,0 +1,67 @@
+.HeroServices{
+    height: 50vh;
+    width: 100%;
+    background: var(--btn-primery);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 40px;
+    color: var(--color-white);
+}
+.content_contener{
+    height: 100%;
+    width: 30%;
+    padding: 30px;
+    text-align: justify;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.content_contener > h3{
+    font-size: 1.5rem;
+}
+.specialBg{
+    background-color: #5DB2FF;
+}
+
+/* Add blur effect when modal is open */
+.blurBackground {
+  filter: blur(5px);  /* ✅ Background blur */
+  pointer-events: none; /* Prevent interaction */
+}
+
+/* ✅ Modal overlay - covers full screen */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* ✅ Dark transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* ✅ Modal content */
+.modalContent {
+  background: var(--bg-secondary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(255, 254, 254, 0.851);
+  width: 70%;
+  position: relative;
+}
+
+/* ✅ Close button */
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: red;
+}

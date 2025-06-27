@@ -1,0 +1,54 @@
+.container {
+    /* padding: 20px; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+
+  }
+  
+  
+  .table {
+    width: 100%;
+    /* max-width: 800px; */
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  .thead th{
+    background : var(--gradient-1);
+  }
+  
+ 
+  
+  td {
+    color: #555;
+  }
+  
+  .deleteButton {
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  .deleteButton:hover {
+    background: darkred;
+  }
+  
+  .noAppointments {
+    padding: 20px;
+    color: gray;
+    text-align: center;
+  }
+  

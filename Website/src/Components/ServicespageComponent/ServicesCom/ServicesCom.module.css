@@ -1,0 +1,111 @@
+.PropertyHero{
+    width: 100%;
+      background-color: rgba(7, 42, 43, 0.841);
+    height: 75vh; 
+    box-shadow: 5px 5px 10px rgba(0,0,0, 0.6);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Property_Banner{
+    height: 100%;
+    width: 60%;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%, 0% 0%);
+   background-image: url(../../../assets/ServicesPage/HeroBanner.jpg);
+   background-size: cover;
+   border: 2px  var(--contact-back) solid;
+    z-index: 100;
+}
+.content{
+    position: absolute;
+    width: 60%;
+    right: 0%;
+    top: 30%;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 2px 3px 5% black ;
+}
+.content>h1{
+    color: var(--bg-secondary);
+    font-size: 2.5rem;
+    text-shadow: 2px 2px  10px var(--bg-secondary);
+}
+.content>p{
+    width: 60%;
+    color: var(--bg-secondary);
+    text-align: justify;
+}
+  
+  .button:hover {
+    opacity: 0.8;
+  }
+
+  @media (Max-width:1024px)
+  {
+    .Property_Banner{
+      z-index: 0;
+      display: none;
+    }
+      .content{
+        margin-top: -100px;
+        align-items: center;
+        width: 90%;
+      }
+      .content>p{
+        width: 90%;
+        margin: 0;
+        padding: 0;
+      }
+      .buttons{
+        margin-top: 50px;
+        width: 80%;
+      }
+  }
+  
+
+/* Add blur effect when modal is open */
+.blurBackground {
+  filter: blur(5px);  /* ✅ Background blur */
+  pointer-events: none; /* Prevent interaction */
+}
+
+/* ✅ Modal overlay - covers full screen */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* ✅ Dark transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* ✅ Modal content */
+.modalContent {
+  background: var(--bg-secondary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(255, 254, 254, 0.851);
+  width: 70%;
+  position: relative;
+}
+
+/* ✅ Close button */
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: red;
+}

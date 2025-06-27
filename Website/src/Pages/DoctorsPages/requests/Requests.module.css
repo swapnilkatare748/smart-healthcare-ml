@@ -1,0 +1,58 @@
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+}
+  
+.table {
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+  
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+  
+th {
+    background-color: #f4f4f4;
+}
+  
+tr:last-child td {
+    border-bottom: none;
+}
+  
+.acceptButton, .deleteButton {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 2px;
+}
+  
+.acceptButton {
+    background: green;
+    color: white;
+}
+  
+.deleteButton {
+    background: red;
+    color: white;
+}
+  
+.noRequests {
+    padding: 20px;
+    color: gray;
+    text-align: center;
+}
+  
+.Actions {
+    display: flex;
+    justify-content: space-around;
+}

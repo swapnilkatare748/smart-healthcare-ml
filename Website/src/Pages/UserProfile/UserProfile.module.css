@@ -1,0 +1,18 @@
+.UserProfile{
+    background-color: var(--bg-secondary);
+    height: 50vh;
+    width: 70%;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.profile_photo{
+    width: 40%;
+    height: 100%;
+}
+.profile_photo > img{
+    border-radius: 100%;
+    width: 80%;
+    height: 70%;
+}

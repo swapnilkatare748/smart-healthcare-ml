@@ -1,0 +1,106 @@
+/* 🔷 General Styling */
+.departments {
+    text-align: center;
+    margin : 40px 40px;
+    padding: 50px 20px;
+    background: var(--bg-primary);
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    color: #05445E;
+    margin-bottom: 10px;
+  }
+  
+  .subheading {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 40px;
+  }
+  
+  /* 🔷 Department List Grid */
+  .departmentList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 🔷 Individual Card */
+  .card {
+    background: var(--bg-secondary);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 🔷 Department Icon */
+  .icon {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 15px;
+  }
+  
+  /* 🔷 Text Styling */
+  .title {
+    font-size: 1.5rem;
+    color: #05445E;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .doctorCount {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  /* 🔷 Book Appointment Button */
+  .bookBtn {
+    background: #189AB4;
+    color: var(--color-white);
+    border: none;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .bookBtn:hover {
+    background: #05445E;
+  }
+  
+  /* 🔷 Responsive Design */
+  @media (max-width: 768px) {
+    .departmentList {
+      grid-template-columns: 1fr;
+    }
+  
+    .card {
+      padding: 15px;
+    }
+  
+    .heading {
+      font-size: 2rem;
+    }
+  
+    .subheading {
+      font-size: 1rem;
+    }
+  }
+  
